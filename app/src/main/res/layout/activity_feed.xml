@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jobs.FeedActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#596873">
+        <View
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/job_icon"/>
+        <TextView
+            android:id="@+id/logoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/harabara"
+            android:text="WEWORK"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.25"
+        android:id="@+id/viewPager"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/viewPager"
+        android:background="#596873"
+        android:layout_weight="0.75"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/newsfeed"
+            android:id="@+id/news_feed"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+        <ImageView
+            android:padding="7dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/post"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:id="@+id/post_recruitment"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+        <ImageView
+            android:id="@+id/setting_btn"
+            android:padding="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/setting"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

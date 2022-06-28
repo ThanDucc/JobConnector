@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#80FFFFFF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="New Jobs"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/refresh_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_refresh_24" />
+    </RelativeLayout>
+    <ListView
+        android:paddingHorizontal="20dp"
+        android:id="@+id/postList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/logoTitle"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="30sp"
+        android:layout_weight="19">
+    </ListView>
+</LinearLayout>

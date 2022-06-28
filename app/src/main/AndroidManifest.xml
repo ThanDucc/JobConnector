@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jobconnector">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Start.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/job_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="false"
+        tools:targetApi="m">
+        <activity
+            android:name=".Setting.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Setting.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.FavoriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Others.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.ApplyActivity"
+            android:exported="false" />
+
+<!--        <service-->
+<!--            android:name=".MyFirebaseInstanceIDService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+        <activity
+            android:name=".Setting.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Jobs.FeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Work.WorkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Start.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Work.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.AccountEmployer"
+            android:exported="false" />
+        <activity
+            android:name=".Account.AccountJobSeeker"
+            android:exported="false" />
+        <activity
+            android:name=".Jobs.JobDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Account.UpdateEmployer"
+            android:exported="false" />
+        <activity
+            android:name=".Account.UpdateJobSeeker"
+            android:exported="false" />
+        <activity
+            android:name=".Start.AppStartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
